@@ -1,0 +1,23 @@
+@import "../mixins/animation"
+@import "../mixins/transform"
+
++keyframes(name)
+	0%
+		+scale(1,1)
+	50%
+		+scale(100,100)
+		background-color: red
+	100%
+		+scale(1,1)
+div.circle
+	//name 5s Y 2s X 
+	+animation(name 2s linear 2s infinite )
+
+//y =	
+//linear
+//ease
+//ease-in
+//ease-out
+//ease-in-out
+
+//x = (infinite , alternate, reverse)
